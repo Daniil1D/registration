@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['newTodo'])) {
         $newTodo = $_POST['newTodo'];
 
-        // Подготовка и выполнение запроса на добавление записи в базу данных
+        // Подготовка и выполнение запроса на добавление записи в базу данных.
         $query = "INSERT INTO `Todo List` (`id`, `Name`) VALUES (NULL, '$newTodo')";
         mysqli_query($link, $query);
 
